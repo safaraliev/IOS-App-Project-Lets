@@ -20,6 +20,7 @@
 		4AA71CB22D5C802500CF9203 /* LoginControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB12D5C802500CF9203 /* LoginControllerVC.swift */; };
 		4AA71CB42D5C803000CF9203 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB32D5C803000CF9203 /* RegisterVC.swift */; };
 		4AA71CB62D5C804800CF9203 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB52D5C804800CF9203 /* ForgotPasswordVC.swift */; };
+		F4EB2BE12D5CA24B0022F147 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB2BE02D5CA2480022F147 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		4AA71CB12D5C802500CF9203 /* LoginControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerVC.swift; sourceTree = "<group>"; };
 		4AA71CB32D5C803000CF9203 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		4AA71CB52D5C804800CF9203 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		F4EB2BE02D5CA2480022F147 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				4A233C052D5C794600635373 /* OnboardingView.swift */,
+				F4EB2BE02D5CA2480022F147 /* CustomButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				4AA71CB62D5C804800CF9203 /* ForgotPasswordVC.swift in Sources */,
 				4A233C012D5C78DB00635373 /* WelcomeScreenVC2.swift in Sources */,
 				4A233C032D5C78F400635373 /* WelcomeScreenVC3.swift in Sources */,
+				F4EB2BE12D5CA24B0022F147 /* CustomButton.swift in Sources */,
 				4A233BE82D5BE3F000635373 /* SceneDelegate.swift in Sources */,
 				4AA71CAF2D5C7EFB00CF9203 /* AuthHeaderView.swift in Sources */,
 				4AA71CB22D5C802500CF9203 /* LoginControllerVC.swift in Sources */,
