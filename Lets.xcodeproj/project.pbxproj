@@ -20,11 +20,7 @@
 		4AA71CB22D5C802500CF9203 /* LoginControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB12D5C802500CF9203 /* LoginControllerVC.swift */; };
 		4AA71CB42D5C803000CF9203 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB32D5C803000CF9203 /* RegisterVC.swift */; };
 		4AA71CB62D5C804800CF9203 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB52D5C804800CF9203 /* ForgotPasswordVC.swift */; };
-
 		F4EB2BE12D5CA24B0022F147 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB2BE02D5CA2480022F147 /* CustomButton.swift */; };
-
-		4AA71CB82D5C996D00CF9203 /* customFontNunito in Resources */ = {isa = PBXBuildFile; fileRef = 4AA71CB72D5C996D00CF9203 /* customFontNunito */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,10 +39,6 @@
 		4AA71CB12D5C802500CF9203 /* LoginControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerVC.swift; sourceTree = "<group>"; };
 		4AA71CB32D5C803000CF9203 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		4AA71CB52D5C804800CF9203 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
-
-		F4EB2BE02D5CA2480022F147 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-
-		4AA71CB72D5C996D00CF9203 /* customFontNunito */ = {isa = PBXFileReference; lastKnownFileType = folder; name = customFontNunito; path = ../../../customFontNunito; sourceTree = "<group>"; };
 		4AA71CBA2D5C997E00CF9203 /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
 		4AA71CBB2D5C997E00CF9203 /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		4AA71CBC2D5C997E00CF9203 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -63,7 +55,7 @@
 		4AA71CC72D5C997E00CF9203 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
 		4AA71CC82D5C997E00CF9203 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
 		4AA71CC92D5C997E00CF9203 /* Nunito-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-MediumItalic.ttf"; sourceTree = "<group>"; };
-
+		F4EB2BE02D5CA2480022F147 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +88,6 @@
 		4A233BE42D5BE3F000635373 /* Lets */ = {
 			isa = PBXGroup;
 			children = (
-				4AA71CB72D5C996D00CF9203 /* customFontNunito */,
 				4AA71CAB2D5C7DC300CF9203 /* AuthScreen */,
 				4A233BFA2D5C787500635373 /* WelcomeScreen */,
 				4A233BF92D5C785200635373 /* Supporting */,
@@ -256,7 +247,6 @@
 			files = (
 				4A233BF22D5BE3F700635373 /* LaunchScreen.storyboard in Resources */,
 				4A233BEF2D5BE3F700635373 /* Assets.xcassets in Resources */,
-				4AA71CB82D5C996D00CF9203 /* customFontNunito in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
