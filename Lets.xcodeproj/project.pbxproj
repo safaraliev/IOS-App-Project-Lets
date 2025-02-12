@@ -16,6 +16,10 @@
 		4A233C012D5C78DB00635373 /* WelcomeScreenVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A233C002D5C78DB00635373 /* WelcomeScreenVC2.swift */; };
 		4A233C032D5C78F400635373 /* WelcomeScreenVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A233C022D5C78F400635373 /* WelcomeScreenVC3.swift */; };
 		4A233C062D5C794600635373 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A233C052D5C794600635373 /* OnboardingView.swift */; };
+		4AA71CAF2D5C7EFB00CF9203 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CAE2D5C7EFB00CF9203 /* AuthHeaderView.swift */; };
+		4AA71CB22D5C802500CF9203 /* LoginControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB12D5C802500CF9203 /* LoginControllerVC.swift */; };
+		4AA71CB42D5C803000CF9203 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB32D5C803000CF9203 /* RegisterVC.swift */; };
+		4AA71CB62D5C804800CF9203 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB52D5C804800CF9203 /* ForgotPasswordVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		4A233C002D5C78DB00635373 /* WelcomeScreenVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenVC2.swift; sourceTree = "<group>"; };
 		4A233C022D5C78F400635373 /* WelcomeScreenVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenVC3.swift; sourceTree = "<group>"; };
 		4A233C052D5C794600635373 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		4AA71CAE2D5C7EFB00CF9203 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
+		4AA71CB12D5C802500CF9203 /* LoginControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerVC.swift; sourceTree = "<group>"; };
+		4AA71CB32D5C803000CF9203 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		4AA71CB52D5C804800CF9203 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 		4A233BE42D5BE3F000635373 /* Lets */ = {
 			isa = PBXGroup;
 			children = (
+				4AA71CAB2D5C7DC300CF9203 /* AuthScreen */,
 				4A233BFA2D5C787500635373 /* WelcomeScreen */,
 				4A233BF92D5C785200635373 /* Supporting */,
 				4A233BF32D5BE3F700635373 /* Info.plist */,
@@ -104,6 +113,33 @@
 			isa = PBXGroup;
 			children = (
 				4A233C052D5C794600635373 /* OnboardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4AA71CAB2D5C7DC300CF9203 /* AuthScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4AA71CAD2D5C7EA400CF9203 /* Views */,
+				4AA71CAC2D5C7DD400CF9203 /* Controllres */,
+			);
+			path = AuthScreen;
+			sourceTree = "<group>";
+		};
+		4AA71CAC2D5C7DD400CF9203 /* Controllres */ = {
+			isa = PBXGroup;
+			children = (
+				4AA71CB12D5C802500CF9203 /* LoginControllerVC.swift */,
+				4AA71CB32D5C803000CF9203 /* RegisterVC.swift */,
+				4AA71CB52D5C804800CF9203 /* ForgotPasswordVC.swift */,
+			);
+			path = Controllres;
+			sourceTree = "<group>";
+		};
+		4AA71CAD2D5C7EA400CF9203 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AA71CAE2D5C7EFB00CF9203 /* AuthHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,10 +215,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A233BE62D5BE3F000635373 /* AppDelegate.swift in Sources */,
+				4AA71CB42D5C803000CF9203 /* RegisterVC.swift in Sources */,
 				4A233BFD2D5C789300635373 /* OnboardingViewController.swift in Sources */,
+				4AA71CB62D5C804800CF9203 /* ForgotPasswordVC.swift in Sources */,
 				4A233C012D5C78DB00635373 /* WelcomeScreenVC2.swift in Sources */,
 				4A233C032D5C78F400635373 /* WelcomeScreenVC3.swift in Sources */,
 				4A233BE82D5BE3F000635373 /* SceneDelegate.swift in Sources */,
+				4AA71CAF2D5C7EFB00CF9203 /* AuthHeaderView.swift in Sources */,
+				4AA71CB22D5C802500CF9203 /* LoginControllerVC.swift in Sources */,
 				4A233BFF2D5C78B600635373 /* WelcomeScreenVC1.swift in Sources */,
 				4A233C062D5C794600635373 /* OnboardingView.swift in Sources */,
 			);
