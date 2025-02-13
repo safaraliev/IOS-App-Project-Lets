@@ -10,7 +10,7 @@ import UIKit
 class OnboardingView: UIView {
 
     let letsLabel = UILabel()
-    let welcomeImage = UIImageView()
+    let logoImage = UIImageView()
     let infoLabel = UILabel()
 
     override init(frame: CGRect) {
@@ -32,8 +32,8 @@ class OnboardingView: UIView {
         letsLabel.translatesAutoresizingMaskIntoConstraints = false
 
         // Настроим изображение
-        welcomeImage.contentMode = .scaleAspectFill
-        welcomeImage.translatesAutoresizingMaskIntoConstraints = false
+        logoImage.contentMode = .scaleAspectFill
+        logoImage.translatesAutoresizingMaskIntoConstraints = false
 
         infoLabel.textColor = .white
         infoLabel.font = UIFont.systemFont(ofSize: 24, weight: .semibold)
@@ -42,7 +42,7 @@ class OnboardingView: UIView {
         infoLabel.translatesAutoresizingMaskIntoConstraints = false
         // Добавим элементы на экран
         addSubview(letsLabel)
-        addSubview(welcomeImage)
+        addSubview(logoImage)
         addSubview(infoLabel)
 
         // Ограничения для текста
@@ -55,15 +55,15 @@ class OnboardingView: UIView {
 
         // Ограничения для изображения
         NSLayoutConstraint.activate([
-            welcomeImage.centerXAnchor.constraint(equalTo: centerXAnchor),
-            welcomeImage.topAnchor.constraint(equalTo: letsLabel.bottomAnchor, constant: 60),
-            welcomeImage.widthAnchor.constraint(equalToConstant: 200), // Ширина
-            welcomeImage.heightAnchor.constraint(equalToConstant: 200) // Высота
+            logoImage.centerXAnchor.constraint(equalTo: centerXAnchor),
+            logoImage.topAnchor.constraint(equalTo: letsLabel.bottomAnchor, constant: 60),
+            logoImage.widthAnchor.constraint(equalToConstant: 200), // Ширина
+            logoImage.heightAnchor.constraint(equalToConstant: 200) // Высота
         ])
         
         NSLayoutConstraint.activate([
             infoLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            infoLabel.topAnchor.constraint(equalTo: welcomeImage.bottomAnchor, constant: 100),
+            infoLabel.topAnchor.constraint(equalTo: logoImage.bottomAnchor, constant: 100),
             infoLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25),
             infoLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -25)
         ])
@@ -71,7 +71,7 @@ class OnboardingView: UIView {
 
     func configure(text: String, image: UIImage,info: String) {
         letsLabel.text = text
-        welcomeImage.image = image
+        logoImage.image = image
         infoLabel.text = info
     }
 }

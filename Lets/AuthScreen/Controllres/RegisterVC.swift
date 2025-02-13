@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  LoginControllerViewController.swift
 //  Lets
 //
 //  Created by Нуридин Сафаралиев on 2/12/25.
@@ -9,21 +9,25 @@ import UIKit
 
 class RegisterVC: UIViewController {
 
+    
+    let headerView = AuthHeaderView(title: "Register")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.setGradientBackground()
+        setupUI()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   
+    func setupUI(){
+        self.view.addSubview(headerView)
+        
+        headerView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            headerView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            headerView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            headerView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            headerView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.4),
+        ])
     }
-    */
-
 }
