@@ -24,7 +24,8 @@ class CustomTextField: UITextField {
         self.leftViewMode = .always
         self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: self.frame.size.height))
         
-        let placeholderColor = UIColor(red: 129/255, green: 133/255, blue: 130/255, alpha: 1)
+        let placeholderColor = UIColor.lightGray
+//        UIColor(red: 129/255, green: 133/255, blue: 130/255, alpha: 1)
         
         switch fieldType {
         case .username:
@@ -54,7 +55,7 @@ class CustomTextField: UITextField {
                 string: "Number",
                 attributes: [NSAttributedString.Key.foregroundColor: placeholderColor]
             )
-            self.keyboardType = .phonePad
+            self.keyboardType = .numberPad
             self.textContentType = .telephoneNumber
         }
     }

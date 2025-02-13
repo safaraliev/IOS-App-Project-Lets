@@ -40,10 +40,10 @@ class CustomButton: UIButton {
             self.titleLabel?.font = UIFont(name: "Nunito-Bold", size: 22)
             
         case .med:
-            self.titleLabel?.font = UIFont(name: "Nunito_SemiBold", size: 18)
+            self.titleLabel?.font = UIFont(name: "Nunito-SemiBold", size: 18)
             
         case .small:
-            self.titleLabel?.font = UIFont(name: "Nunito_Regular", size: 16)
+            self.titleLabel?.font = UIFont(name: "Nunito-Regular", size: 16)
         }
         
         self.addTarget(self, action: #selector(buttonPressed), for: .touchDown)
