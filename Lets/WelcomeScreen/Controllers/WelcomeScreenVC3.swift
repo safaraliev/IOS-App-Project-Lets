@@ -40,11 +40,15 @@ class WelcomScreenVC3: UIViewController {
     }
     
     @objc func didTapButton(){
-//        if let window = self.view.window{
-//            window.rootViewController = LoginControllerVC()
-//            window.makeKeyAndVisible()
-        
-        navigationController?.pushViewController(LoginControllerVC(), animated: true)
+        if let window = self.view.window{
+            window.rootViewController = LoginControllerVC()
+            window.makeKeyAndVisible()
+            
+        }
+
+            
+            //To navigate by navController change rootVC in SceneDelegate
+//        navigationController?.pushViewController(LoginControllerVC(), animated: true)
     }
     
 }

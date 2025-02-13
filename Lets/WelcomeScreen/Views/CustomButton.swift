@@ -62,17 +62,18 @@ class CustomButton: UIButton {
         gradientLayer?.cornerRadius = layer.cornerRadius
     }
     
-    
+//    Pressing animation
     @objc func buttonPressed() {
-        UIView.animate(withDuration: <#T##TimeInterval#>, delay: <#T##TimeInterval#>, usingSpringWithDamping: <#T##CGFloat#>, initialSpringVelocity: <#T##CGFloat#>, options: <#T##UIView.AnimationOptions#>, animations: <#T##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
-    }
+        UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseIn) {
+            self.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        } completion: { _ in
+            self.transform = CGAffineTransform(scaleX: 1, y: 1)
+//            UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
+//                self.transform = CGAffineTransform(scaleX: 1, y: 1)
+//            }, completion: nil)
+        }
 
-//    @objc func buttonReleased() {
-//        // Пружинная анимация для восстановления
-//        UIView.animate(withDuration: 0.1, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.6, options: .curveEaseOut, animations: {
-//            self.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-//        })
-//    }
+    }
     
     private func addGradientLayer() {
         let gradient = CAGradientLayer()
