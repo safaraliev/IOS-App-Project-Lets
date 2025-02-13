@@ -3,7 +3,7 @@ import UIKit
 class OnboardingViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     var pageViewController: UIPageViewController!
-    let pages = [WelcomScreenVC1(), WelcomScreenVC2(), WelcomScreenVC3()] // Создаем массив экранов
+    let pages = [ WelcomScreenVC1(), WelcomScreenVC2(), WelcomScreenVC3(),]
     let pageControl = UIPageControl()
 
     override func viewDidLoad() {

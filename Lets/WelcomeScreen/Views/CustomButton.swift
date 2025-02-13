@@ -9,44 +9,96 @@ import UIKit
 
 class CustomButton: UIButton {
 
-    // Переменные для кастомизации
+    enum FontSize {
+        case big
+        case med
+        case small
+    }
+    
     var gradientLayer: CAGradientLayer!
 
-    init() {
+    init(title: String, fontSize: FontSize, hasBackground: Bool) {
         super.init(frame: .zero)
-        commonInit()
+        self.layer.cornerRadius = 15
+        self.layer.masksToBounds = true
+        
+        self.setTitle(title, for: .normal)
+        self.titleLabel?.textAlignment = .center
+        
+        self.backgroundColor = .clear
+        
+        if hasBackground {
+            addGradientLayer()
+        }
+        
+        let titleColor: UIColor = hasBackground ? UIColor(red: 250/255, green: 238/255, blue: 220/255, alpha: 1) : .black
+        self.setTitleColor(titleColor, for: .normal)
+        
+        
+        switch fontSize {
+        case .big:
+            self.titleLabel?.font = UIFont(name: "Nunito-Bold", size: 22)
+            
+        case .med:
+            self.titleLabel?.font = UIFont(name: "Nunito_SemiBold", size: 18)
+            
+        case .small:
+            self.titleLabel?.font = UIFont(name: "Nunito_Regular", size: 16)
+        }
+        
+        self.addTarget(self, action: #selector(buttonPressed), for: .touchDown)
+//        self.addTarget(self, action: #selector(buttonReleased), for: .touchUpInside)
+        
     }
 
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        commonInit()
-    }
-
-    private func commonInit() {
-        self.setTitleColor(.white, for: .normal)
-        self.titleLabel?.font = UIFont.systemFont(ofSize: 24, weight: .semibold)
-        self.titleLabel?.textAlignment = .center
-        self.titleLabel?.numberOfLines = 1
-        self.backgroundColor = .clear
-        self.layer.cornerRadius = 15
-        self.translatesAutoresizingMaskIntoConstraints = false
-        
-        gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [
-            UIColor(red: 119/255, green: 68/255, blue: 240/255, alpha: 0.7).cgColor,
-            UIColor(red: 206/255, green: 196/255, blue: 231/255, alpha: 0.7).cgColor
-        ]
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 1.5, y: 0.5)
-        self.layer.masksToBounds = true
     }
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        gradientLayer.frame = self.bounds
-        if gradientLayer.superlayer == nil {
-            self.layer.insertSublayer(gradientLayer, at: 0)
-        }
+        gradientLayer?.frame = bounds
+        gradientLayer?.cornerRadius = layer.cornerRadius
     }
+    
+    
+    @objc func buttonPressed() {
+        UIView.animate(withDuration: <#T##TimeInterval#>, delay: <#T##TimeInterval#>, usingSpringWithDamping: <#T##CGFloat#>, initialSpringVelocity: <#T##CGFloat#>, options: <#T##UIView.AnimationOptions#>, animations: <#T##() -> Void#>, completion: <#T##((Bool) -> Void)?##((Bool) -> Void)?##(Bool) -> Void#>)
+    }
+
+//    @objc func buttonReleased() {
+//        // Пружинная анимация для восстановления
+//        UIView.animate(withDuration: 0.1, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.6, options: .curveEaseOut, animations: {
+//            self.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+//        })
+//    }
+    
+    private func addGradientLayer() {
+        let gradient = CAGradientLayer()
+        gradient.colors = [UIColor(red: 230/255, green: 108/255, blue: 89/255, alpha: 1).cgColor, UIColor(red: 242/255, green: 165/255, blue: 80/255, alpha: 1).cgColor]
+    
+        gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
+        gradient.endPoint = CGPoint(x: 1.5, y: 0.5)
+        gradient.frame = bounds
+        
+        layer.insertSublayer(gradient, at: 0)
+        self.gradientLayer = gradient
+        }
+    
+
+    
+    func animateGradientChange() {
+        let animation = CABasicAnimation(keyPath: "colors")
+        animation.fromValue = gradientLayer?.colors
+        animation.toValue = [UIColor(red: 242/255, green: 165/255, blue: 80/255, alpha: 1).cgColor, UIColor(red: 230/255, green: 108/255, blue: 89/255, alpha: 1).cgColor]
+        animation.fillMode = .forwards
+        animation.duration = 3.0
+        animation.autoreverses = true
+        animation.repeatCount = .infinity
+        animation.isRemovedOnCompletion = false
+        gradientLayer?.add(animation, forKey: "colorChange")
+    }
+
+    
 }
