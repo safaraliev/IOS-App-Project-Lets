@@ -16,6 +16,9 @@
 		4A233C012D5C78DB00635373 /* WelcomeScreenVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A233C002D5C78DB00635373 /* WelcomeScreenVC2.swift */; };
 		4A233C032D5C78F400635373 /* WelcomeScreenVC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A233C022D5C78F400635373 /* WelcomeScreenVC3.swift */; };
 		4A233C062D5C794600635373 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A233C052D5C794600635373 /* OnboardingView.swift */; };
+		4A8266462D607E0C002E4280 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8266452D607E0C002E4280 /* HomeController.swift */; };
+		4A8266482D607EF2002E4280 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8266472D607EF2002E4280 /* HomeTabBarController.swift */; };
+		4A82664A2D61CCA9002E4280 /* ProfileControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8266492D61CCA9002E4280 /* ProfileControler.swift */; };
 		4AA71CAF2D5C7EFB00CF9203 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CAE2D5C7EFB00CF9203 /* AuthHeaderView.swift */; };
 		4AA71CB22D5C802500CF9203 /* LoginControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB12D5C802500CF9203 /* LoginControllerVC.swift */; };
 		4AA71CB42D5C803000CF9203 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB32D5C803000CF9203 /* RegisterVC.swift */; };
@@ -53,6 +56,9 @@
 		4A233C002D5C78DB00635373 /* WelcomeScreenVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenVC2.swift; sourceTree = "<group>"; };
 		4A233C022D5C78F400635373 /* WelcomeScreenVC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenVC3.swift; sourceTree = "<group>"; };
 		4A233C052D5C794600635373 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		4A8266452D607E0C002E4280 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		4A8266472D607EF2002E4280 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		4A8266492D61CCA9002E4280 /* ProfileControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileControler.swift; sourceTree = "<group>"; };
 		4AA71CAE2D5C7EFB00CF9203 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		4AA71CB12D5C802500CF9203 /* LoginControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerVC.swift; sourceTree = "<group>"; };
 		4AA71CB32D5C803000CF9203 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 		4A233BE42D5BE3F000635373 /* Lets */ = {
 			isa = PBXGroup;
 			children = (
+				4A82663E2D5F3548002E4280 /* MainScreen */,
 				4AA71CAB2D5C7DC300CF9203 /* AuthScreen */,
 				4A233BFA2D5C787500635373 /* WelcomeScreen */,
 				4A233BF92D5C785200635373 /* Supporting */,
@@ -155,6 +162,40 @@
 			children = (
 				4A233C052D5C794600635373 /* OnboardingView.swift */,
 				F4EB2BE02D5CA2480022F147 /* CustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A82663E2D5F3548002E4280 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4A8266402D607D3D002E4280 /* Home Screen */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		4A8266402D607D3D002E4280 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4A8266442D607DF5002E4280 /* Views */,
+				4A8266432D607DEE002E4280 /* Controllers */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		4A8266432D607DEE002E4280 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A8266452D607E0C002E4280 /* HomeController.swift */,
+				4A8266492D61CCA9002E4280 /* ProfileControler.swift */,
+				4A8266472D607EF2002E4280 /* HomeTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A8266442D607DF5002E4280 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,10 +341,12 @@
 			files = (
 				4AA71CDD2D5CBA9300CF9203 /* CustomTextField.swift in Sources */,
 				4A233BE62D5BE3F000635373 /* AppDelegate.swift in Sources */,
+				4A8266462D607E0C002E4280 /* HomeController.swift in Sources */,
 				4AA71CB42D5C803000CF9203 /* RegisterVC.swift in Sources */,
 				4A233BFD2D5C789300635373 /* OnboardingViewController.swift in Sources */,
 				4AA71CB62D5C804800CF9203 /* ForgotPasswordVC.swift in Sources */,
 				4A233C012D5C78DB00635373 /* WelcomeScreenVC2.swift in Sources */,
+				4A82664A2D61CCA9002E4280 /* ProfileControler.swift in Sources */,
 				4A233C032D5C78F400635373 /* WelcomeScreenVC3.swift in Sources */,
 				F4EB2BE12D5CA24B0022F147 /* CustomButton.swift in Sources */,
 				4A233BE82D5BE3F000635373 /* SceneDelegate.swift in Sources */,
@@ -311,6 +354,7 @@
 				4AA71CB22D5C802500CF9203 /* LoginControllerVC.swift in Sources */,
 				4A233BFF2D5C78B600635373 /* WelcomeScreenVC1.swift in Sources */,
 				4A233C062D5C794600635373 /* OnboardingView.swift in Sources */,
+				4A8266482D607EF2002E4280 /* HomeTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

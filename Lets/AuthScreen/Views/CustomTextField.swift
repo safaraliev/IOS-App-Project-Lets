@@ -1,6 +1,6 @@
 import UIKit
 
-class CustomTextField: UITextField {
+class CustomTextField: UITextField, UITextFieldDelegate {
     
     enum CustomTextFieldType {
         case username
@@ -58,6 +58,13 @@ class CustomTextField: UITextField {
             self.keyboardType = .numberPad
             self.textContentType = .telephoneNumber
         }
+        
+        self.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()  // Скрыть клавиатуру
+        return true
     }
     
     required init?(coder: NSCoder) {

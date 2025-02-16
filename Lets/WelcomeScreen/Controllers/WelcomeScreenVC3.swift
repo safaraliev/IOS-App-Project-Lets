@@ -41,9 +41,10 @@ class WelcomScreenVC3: UIViewController {
     
     @objc func didTapButton(){
         if let window = self.view.window{
-            window.rootViewController = LoginControllerVC()
+            let vc = LoginControllerVC()
+            let nav = UINavigationController(rootViewController: vc)
+            window.rootViewController = nav
             window.makeKeyAndVisible()
-            
         }
 
             

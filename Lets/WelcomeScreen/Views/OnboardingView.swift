@@ -9,9 +9,29 @@ import UIKit
 
 class OnboardingView: UIView {
 
-    let letsLabel = UILabel()
-    let logoImage = UIImageView()
-    let infoLabel = UILabel()
+    private let letsLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont(name: "Nunito-Black", size: 40)
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    let logoImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+    
+    let infoLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.font = UIFont(name: "Nunito-SemiBold", size: 24)
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        return label
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,28 +44,17 @@ class OnboardingView: UIView {
     }
 
     private func setupUI() {
-        // Настроим текстовую метку
-        letsLabel.textColor = .white
-        letsLabel.font = UIFont.systemFont(ofSize: 40, weight: .bold)
-        letsLabel.textAlignment = .center
-        letsLabel.numberOfLines = 0
-        letsLabel.translatesAutoresizingMaskIntoConstraints = false
 
-        // Настроим изображение
-        logoImage.contentMode = .scaleAspectFill
+        letsLabel.translatesAutoresizingMaskIntoConstraints = false
         logoImage.translatesAutoresizingMaskIntoConstraints = false
 
-        infoLabel.textColor = .white
-        infoLabel.font = UIFont.systemFont(ofSize: 24, weight: .semibold)
-        infoLabel.textAlignment = .center
-        infoLabel.numberOfLines = 0
+
         infoLabel.translatesAutoresizingMaskIntoConstraints = false
-        // Добавим элементы на экран
+
         addSubview(letsLabel)
         addSubview(logoImage)
         addSubview(infoLabel)
 
-        // Ограничения для текста
         NSLayoutConstraint.activate([
             letsLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             letsLabel.topAnchor.constraint(equalTo: topAnchor, constant: 131),
@@ -53,12 +62,11 @@ class OnboardingView: UIView {
             letsLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20)
         ])
 
-        // Ограничения для изображения
         NSLayoutConstraint.activate([
             logoImage.centerXAnchor.constraint(equalTo: centerXAnchor),
             logoImage.topAnchor.constraint(equalTo: letsLabel.bottomAnchor, constant: 60),
-            logoImage.widthAnchor.constraint(equalToConstant: 200), // Ширина
-            logoImage.heightAnchor.constraint(equalToConstant: 200) // Высота
+            logoImage.widthAnchor.constraint(equalToConstant: 200),
+            logoImage.heightAnchor.constraint(equalToConstant: 200)
         ])
         
         NSLayoutConstraint.activate([
