@@ -31,7 +31,7 @@ class CustomButton: UIButton {
             addGradientLayer()
         }
         
-        let titleColor: UIColor = hasBackground ? UIColor(red: 250/255, green: 238/255, blue: 220/255, alpha: 1) : .black
+        let titleColor: UIColor = hasBackground ? UIColor(red: 250/255, green: 238/255, blue: 220/255, alpha: 1) : .white
         self.setTitleColor(titleColor, for: .normal)
         
         
@@ -94,7 +94,7 @@ class CustomButton: UIButton {
         animation.fromValue = gradientLayer?.colors
         animation.toValue = [UIColor(red: 242/255, green: 165/255, blue: 80/255, alpha: 1).cgColor, UIColor(red: 230/255, green: 108/255, blue: 89/255, alpha: 1).cgColor]
         animation.fillMode = .forwards
-        animation.duration = 3.0
+        animation.duration = 1
         animation.autoreverses = true
         animation.repeatCount = .infinity
         animation.isRemovedOnCompletion = false
