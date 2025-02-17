@@ -39,8 +39,12 @@
 		4AA71CD72D5CAE5200CF9203 /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA71CC72D5C997E00CF9203 /* Nunito-Italic.ttf */; };
 		4AA71CD82D5CAE5500CF9203 /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA71CC82D5C997E00CF9203 /* Nunito-LightItalic.ttf */; };
 		4AA71CD92D5CAE5700CF9203 /* Nunito-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA71CC92D5C997E00CF9203 /* Nunito-MediumItalic.ttf */; };
-		4AA71CDB2D5CB91A00CF9203 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA71CDA2D5CB91A00CF9203 /* image.png */; };
 		4AA71CDD2D5CBA9300CF9203 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CDC2D5CBA9300CF9203 /* CustomTextField.swift */; };
+		F4BB48662D621B81004225AC /* SetMeetingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB48652D621B81004225AC /* SetMeetingsController.swift */; };
+		F4BB48692D622A01004225AC /* HomeVCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB48682D6229AE004225AC /* HomeVCButton.swift */; };
+		F4BB486D2D623736004225AC /* HomeVCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB486C2D623732004225AC /* HomeVCLabel.swift */; };
+		F4BB486F2D623A0E004225AC /* HomeHorizontalColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB486E2D6239FE004225AC /* HomeHorizontalColCell.swift */; };
+		F4BB48712D6240CC004225AC /* HomeVerticalColCel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB48702D6240C1004225AC /* HomeVerticalColCel.swift */; };
 		F4EB2BE12D5CA24B0022F147 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB2BE02D5CA2480022F147 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,9 +83,13 @@
 		4AA71CC72D5C997E00CF9203 /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
 		4AA71CC82D5C997E00CF9203 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
 		4AA71CC92D5C997E00CF9203 /* Nunito-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-MediumItalic.ttf"; sourceTree = "<group>"; };
-		4AA71CDA2D5CB91A00CF9203 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image.png; path = ../../../../../../Downloads/image.png; sourceTree = "<group>"; };
 		4AA71CDC2D5CBA9300CF9203 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4AA71CDE2D5D3A6500CF9203 /* logoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoImage.png; sourceTree = "<group>"; };
+		F4BB48652D621B81004225AC /* SetMeetingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMeetingsController.swift; sourceTree = "<group>"; };
+		F4BB48682D6229AE004225AC /* HomeVCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCButton.swift; sourceTree = "<group>"; };
+		F4BB486C2D623732004225AC /* HomeVCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCLabel.swift; sourceTree = "<group>"; };
+		F4BB486E2D6239FE004225AC /* HomeHorizontalColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHorizontalColCell.swift; sourceTree = "<group>"; };
+		F4BB48702D6240C1004225AC /* HomeVerticalColCel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVerticalColCel.swift; sourceTree = "<group>"; };
 		F4EB2BE02D5CA2480022F147 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,11 +135,11 @@
 		4A233BF92D5C785200635373 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				4AA71CDE2D5D3A6500CF9203 /* logoImage.png */,
 				4AA71CB92D5C997E00CF9203 /* customFontNunito */,
 				4A233BE52D5BE3F000635373 /* AppDelegate.swift */,
 				4A233BE72D5BE3F000635373 /* SceneDelegate.swift */,
 				4A233BEE2D5BE3F700635373 /* Assets.xcassets */,
+				4AA71CDE2D5D3A6500CF9203 /* logoImage.png */,
 				4A233BF02D5BE3F700635373 /* LaunchScreen.storyboard */,
 			);
 			path = Supporting;
@@ -177,8 +185,8 @@
 		4A8266402D607D3D002E4280 /* Home Screen */ = {
 			isa = PBXGroup;
 			children = (
-				4A8266442D607DF5002E4280 /* Views */,
 				4A8266432D607DEE002E4280 /* Controllers */,
+				F4BB48672D62293A004225AC /* Views */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -187,17 +195,11 @@
 			isa = PBXGroup;
 			children = (
 				4A8266452D607E0C002E4280 /* HomeController.swift */,
+				F4BB48652D621B81004225AC /* SetMeetingsController.swift */,
 				4A8266492D61CCA9002E4280 /* ProfileControler.swift */,
 				4A8266472D607EF2002E4280 /* HomeTabBarController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		4A8266442D607DF5002E4280 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		4AA71CAB2D5C7DC300CF9203 /* AuthScreen */ = {
@@ -231,7 +233,6 @@
 		4AA71CB92D5C997E00CF9203 /* customFontNunito */ = {
 			isa = PBXGroup;
 			children = (
-				4AA71CDA2D5CB91A00CF9203 /* image.png */,
 				4AA71CBA2D5C997E00CF9203 /* Nunito-Medium.ttf */,
 				4AA71CBB2D5C997E00CF9203 /* Nunito-ExtraBoldItalic.ttf */,
 				4AA71CBC2D5C997E00CF9203 /* Nunito-ExtraBold.ttf */,
@@ -250,6 +251,17 @@
 				4AA71CC92D5C997E00CF9203 /* Nunito-MediumItalic.ttf */,
 			);
 			path = customFontNunito;
+			sourceTree = "<group>";
+		};
+		F4BB48672D62293A004225AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4BB48682D6229AE004225AC /* HomeVCButton.swift */,
+				F4BB486C2D623732004225AC /* HomeVCLabel.swift */,
+				F4BB486E2D6239FE004225AC /* HomeHorizontalColCell.swift */,
+				F4BB48702D6240C1004225AC /* HomeVerticalColCel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +292,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					4A233BE12D5BE3F000635373 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -323,7 +335,6 @@
 				4AA71CD12D5CAE4400CF9203 /* Nunito-Bold.ttf in Resources */,
 				4AA71CD52D5CAE4E00CF9203 /* Nunito-SemiBoldItalic.ttf in Resources */,
 				4AA71CCC2D5CAE3800CF9203 /* Nunito-ExtraBold.ttf in Resources */,
-				4AA71CDB2D5CB91A00CF9203 /* image.png in Resources */,
 				4AA71CCA2D5CAE3200CF9203 /* Nunito-Medium.ttf in Resources */,
 				4AA71CCB2D5CAE3500CF9203 /* Nunito-ExtraBoldItalic.ttf in Resources */,
 				4AA71CD72D5CAE5200CF9203 /* Nunito-Italic.ttf in Resources */,
@@ -342,19 +353,24 @@
 				4AA71CDD2D5CBA9300CF9203 /* CustomTextField.swift in Sources */,
 				4A233BE62D5BE3F000635373 /* AppDelegate.swift in Sources */,
 				4A8266462D607E0C002E4280 /* HomeController.swift in Sources */,
+				F4BB486F2D623A0E004225AC /* HomeHorizontalColCell.swift in Sources */,
 				4AA71CB42D5C803000CF9203 /* RegisterVC.swift in Sources */,
 				4A233BFD2D5C789300635373 /* OnboardingViewController.swift in Sources */,
 				4AA71CB62D5C804800CF9203 /* ForgotPasswordVC.swift in Sources */,
 				4A233C012D5C78DB00635373 /* WelcomeScreenVC2.swift in Sources */,
+				F4BB486D2D623736004225AC /* HomeVCLabel.swift in Sources */,
 				4A82664A2D61CCA9002E4280 /* ProfileControler.swift in Sources */,
 				4A233C032D5C78F400635373 /* WelcomeScreenVC3.swift in Sources */,
 				F4EB2BE12D5CA24B0022F147 /* CustomButton.swift in Sources */,
 				4A233BE82D5BE3F000635373 /* SceneDelegate.swift in Sources */,
+				F4BB48692D622A01004225AC /* HomeVCButton.swift in Sources */,
 				4AA71CAF2D5C7EFB00CF9203 /* AuthHeaderView.swift in Sources */,
 				4AA71CB22D5C802500CF9203 /* LoginControllerVC.swift in Sources */,
 				4A233BFF2D5C78B600635373 /* WelcomeScreenVC1.swift in Sources */,
 				4A233C062D5C794600635373 /* OnboardingView.swift in Sources */,
 				4A8266482D607EF2002E4280 /* HomeTabBarController.swift in Sources */,
+				F4BB48712D6240CC004225AC /* HomeVerticalColCel.swift in Sources */,
+				F4BB48662D621B81004225AC /* SetMeetingsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +425,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -470,6 +487,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
