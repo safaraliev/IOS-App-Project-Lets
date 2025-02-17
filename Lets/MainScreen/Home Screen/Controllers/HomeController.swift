@@ -11,7 +11,8 @@ class HomeController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setGradientBackground()
+//        setGradientBackground()
+        self.view.backgroundColor = .white
     }
 
 }
