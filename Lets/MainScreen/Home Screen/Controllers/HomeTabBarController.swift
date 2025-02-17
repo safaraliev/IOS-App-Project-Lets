@@ -22,10 +22,11 @@ class HomeTabBarController: UITabBarController {
         
         let homeController = HomeController()
         let profileController = ProfileControler()
+        let setMeetingsController = SetMeetingsController()
         
         self.viewControllers = [
             generateVC(viewController: homeController, title: "Home", image: UIImage(systemName: "house.fill")),
-            generateVC(viewController: profileController, title: "Profile",image: UIImage(systemName: "person.fill")),
+            generateVC(viewController: setMeetingsController, title: "Meetings", image: UIImage(systemName: "checkmark")),
             generateVC(viewController: profileController, title: "Profile",image: UIImage(systemName: "person.fill"))
         ]
     }
@@ -34,7 +35,7 @@ class HomeTabBarController: UITabBarController {
         let navController = UINavigationController(rootViewController: viewController)
         viewController.tabBarItem.title = title
         viewController.tabBarItem.image = image
-        viewController.title = title
+       
         
         return navController
     }

@@ -40,6 +40,11 @@
 		4AA71CD82D5CAE5500CF9203 /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA71CC82D5C997E00CF9203 /* Nunito-LightItalic.ttf */; };
 		4AA71CD92D5CAE5700CF9203 /* Nunito-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AA71CC92D5C997E00CF9203 /* Nunito-MediumItalic.ttf */; };
 		4AA71CDD2D5CBA9300CF9203 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CDC2D5CBA9300CF9203 /* CustomTextField.swift */; };
+		F4BB48662D621B81004225AC /* SetMeetingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB48652D621B81004225AC /* SetMeetingsController.swift */; };
+		F4BB48692D622A01004225AC /* HomeVCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB48682D6229AE004225AC /* HomeVCButton.swift */; };
+		F4BB486D2D623736004225AC /* HomeVCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB486C2D623732004225AC /* HomeVCLabel.swift */; };
+		F4BB486F2D623A0E004225AC /* HomeHorizontalColCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB486E2D6239FE004225AC /* HomeHorizontalColCell.swift */; };
+		F4BB48712D6240CC004225AC /* HomeVerticalColCel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BB48702D6240C1004225AC /* HomeVerticalColCel.swift */; };
 		F4EB2BE12D5CA24B0022F147 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB2BE02D5CA2480022F147 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +85,11 @@
 		4AA71CC92D5C997E00CF9203 /* Nunito-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-MediumItalic.ttf"; sourceTree = "<group>"; };
 		4AA71CDC2D5CBA9300CF9203 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4AA71CDE2D5D3A6500CF9203 /* logoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoImage.png; sourceTree = "<group>"; };
+		F4BB48652D621B81004225AC /* SetMeetingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMeetingsController.swift; sourceTree = "<group>"; };
+		F4BB48682D6229AE004225AC /* HomeVCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCButton.swift; sourceTree = "<group>"; };
+		F4BB486C2D623732004225AC /* HomeVCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCLabel.swift; sourceTree = "<group>"; };
+		F4BB486E2D6239FE004225AC /* HomeHorizontalColCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHorizontalColCell.swift; sourceTree = "<group>"; };
+		F4BB48702D6240C1004225AC /* HomeVerticalColCel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVerticalColCel.swift; sourceTree = "<group>"; };
 		F4EB2BE02D5CA2480022F147 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				4A8266432D607DEE002E4280 /* Controllers */,
+				F4BB48672D62293A004225AC /* Views */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -184,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				4A8266452D607E0C002E4280 /* HomeController.swift */,
+				F4BB48652D621B81004225AC /* SetMeetingsController.swift */,
 				4A8266492D61CCA9002E4280 /* ProfileControler.swift */,
 				4A8266472D607EF2002E4280 /* HomeTabBarController.swift */,
 			);
@@ -239,6 +251,17 @@
 				4AA71CC92D5C997E00CF9203 /* Nunito-MediumItalic.ttf */,
 			);
 			path = customFontNunito;
+			sourceTree = "<group>";
+		};
+		F4BB48672D62293A004225AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4BB48682D6229AE004225AC /* HomeVCButton.swift */,
+				F4BB486C2D623732004225AC /* HomeVCLabel.swift */,
+				F4BB486E2D6239FE004225AC /* HomeHorizontalColCell.swift */,
+				F4BB48702D6240C1004225AC /* HomeVerticalColCel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,19 +353,24 @@
 				4AA71CDD2D5CBA9300CF9203 /* CustomTextField.swift in Sources */,
 				4A233BE62D5BE3F000635373 /* AppDelegate.swift in Sources */,
 				4A8266462D607E0C002E4280 /* HomeController.swift in Sources */,
+				F4BB486F2D623A0E004225AC /* HomeHorizontalColCell.swift in Sources */,
 				4AA71CB42D5C803000CF9203 /* RegisterVC.swift in Sources */,
 				4A233BFD2D5C789300635373 /* OnboardingViewController.swift in Sources */,
 				4AA71CB62D5C804800CF9203 /* ForgotPasswordVC.swift in Sources */,
 				4A233C012D5C78DB00635373 /* WelcomeScreenVC2.swift in Sources */,
+				F4BB486D2D623736004225AC /* HomeVCLabel.swift in Sources */,
 				4A82664A2D61CCA9002E4280 /* ProfileControler.swift in Sources */,
 				4A233C032D5C78F400635373 /* WelcomeScreenVC3.swift in Sources */,
 				F4EB2BE12D5CA24B0022F147 /* CustomButton.swift in Sources */,
 				4A233BE82D5BE3F000635373 /* SceneDelegate.swift in Sources */,
+				F4BB48692D622A01004225AC /* HomeVCButton.swift in Sources */,
 				4AA71CAF2D5C7EFB00CF9203 /* AuthHeaderView.swift in Sources */,
 				4AA71CB22D5C802500CF9203 /* LoginControllerVC.swift in Sources */,
 				4A233BFF2D5C78B600635373 /* WelcomeScreenVC1.swift in Sources */,
 				4A233C062D5C794600635373 /* OnboardingView.swift in Sources */,
 				4A8266482D607EF2002E4280 /* HomeTabBarController.swift in Sources */,
+				F4BB48712D6240CC004225AC /* HomeVerticalColCel.swift in Sources */,
+				F4BB48662D621B81004225AC /* SetMeetingsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
