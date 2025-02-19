@@ -17,9 +17,6 @@ class HomeTabBarController: UITabBarController {
     }
     
     private func generateTabBar(){
-        tabBar.tintColor = .white
-        tabBar.unselectedItemTintColor = .lightGray
-        
         let homeController = HomeController()
         let profileController = ProfileControler()
         let setMeetingsController = SetMeetingsController()
@@ -35,8 +32,6 @@ class HomeTabBarController: UITabBarController {
         let navController = UINavigationController(rootViewController: viewController)
         viewController.tabBarItem.title = title
         viewController.tabBarItem.image = image
-       
-        
         return navController
     }
     
@@ -57,9 +52,9 @@ class HomeTabBarController: UITabBarController {
         tabBar.itemWidth = width/5
         tabBar.itemPositioning = .centered
         
-        tabBar.tintColor = .white
-        tabBar.unselectedItemTintColor = .lightGray
-        roundLayer.fillColor = CGColor(red: 86/255, green: 86/255, blue: 219/255, alpha: 1)
+        tabBar.tintColor = UIColor(red: 39/255, green: 215/255, blue: 253/255, alpha: 1)
+        tabBar.unselectedItemTintColor = .white
+        roundLayer.fillColor = CGColor(red: 86/255, green: 86/255, blue: 219/255, alpha: 0.95)
     }
     
 }
