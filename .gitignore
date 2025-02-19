@@ -1,4 +1,6 @@
+
 *.xcuserstate
+*.xcuserdata
 .DS_Store
 .Trashes
 Thumbs.db
