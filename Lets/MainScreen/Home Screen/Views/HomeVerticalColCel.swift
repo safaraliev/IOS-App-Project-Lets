@@ -7,6 +7,7 @@ class HomeVerticalColCel: UICollectionViewCell {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleToFill
+        
         return imageView
     }()
 
@@ -14,6 +15,7 @@ class HomeVerticalColCel: UICollectionViewCell {
         super.init(frame: frame)
         
         contentView.addSubview(imageView)
+        
         contentView.backgroundColor = .green
         NSLayoutConstraint.activate([
             imageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
