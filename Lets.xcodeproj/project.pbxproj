@@ -19,6 +19,8 @@
 		4A8266462D607E0C002E4280 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8266452D607E0C002E4280 /* HomeController.swift */; };
 		4A8266482D607EF2002E4280 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8266472D607EF2002E4280 /* HomeTabBarController.swift */; };
 		4A82664A2D61CCA9002E4280 /* ProfileControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8266492D61CCA9002E4280 /* ProfileControler.swift */; };
+		4A8266582D649B3F002E4280 /* profPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4A8266572D649B3F002E4280 /* profPic.jpg */; };
+		4A82665A2D651CAC002E4280 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8266592D651CAC002E4280 /* HomeTableViewCell.swift */; };
 		4AA71CAF2D5C7EFB00CF9203 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CAE2D5C7EFB00CF9203 /* AuthHeaderView.swift */; };
 		4AA71CB22D5C802500CF9203 /* LoginControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB12D5C802500CF9203 /* LoginControllerVC.swift */; };
 		4AA71CB42D5C803000CF9203 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA71CB32D5C803000CF9203 /* RegisterVC.swift */; };
@@ -63,6 +65,8 @@
 		4A8266452D607E0C002E4280 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		4A8266472D607EF2002E4280 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		4A8266492D61CCA9002E4280 /* ProfileControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileControler.swift; sourceTree = "<group>"; };
+		4A8266572D649B3F002E4280 /* profPic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = profPic.jpg; path = ../../../../../Downloads/profPic.jpg; sourceTree = "<group>"; };
+		4A8266592D651CAC002E4280 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		4AA71CAE2D5C7EFB00CF9203 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		4AA71CB12D5C802500CF9203 /* LoginControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerVC.swift; sourceTree = "<group>"; };
 		4AA71CB32D5C803000CF9203 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -84,7 +88,6 @@
 		4AA71CC82D5C997E00CF9203 /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
 		4AA71CC92D5C997E00CF9203 /* Nunito-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-MediumItalic.ttf"; sourceTree = "<group>"; };
 		4AA71CDC2D5CBA9300CF9203 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		4AA71CDE2D5D3A6500CF9203 /* logoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoImage.png; sourceTree = "<group>"; };
 		F4BB48652D621B81004225AC /* SetMeetingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMeetingsController.swift; sourceTree = "<group>"; };
 		F4BB48682D6229AE004225AC /* HomeVCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCButton.swift; sourceTree = "<group>"; };
 		F4BB486C2D623732004225AC /* HomeVCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCLabel.swift; sourceTree = "<group>"; };
@@ -135,11 +138,11 @@
 		4A233BF92D5C785200635373 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				4A8266572D649B3F002E4280 /* profPic.jpg */,
 				4AA71CB92D5C997E00CF9203 /* customFontNunito */,
 				4A233BE52D5BE3F000635373 /* AppDelegate.swift */,
 				4A233BE72D5BE3F000635373 /* SceneDelegate.swift */,
 				4A233BEE2D5BE3F700635373 /* Assets.xcassets */,
-				4AA71CDE2D5D3A6500CF9203 /* logoImage.png */,
 				4A233BF02D5BE3F700635373 /* LaunchScreen.storyboard */,
 			);
 			path = Supporting;
@@ -260,6 +263,7 @@
 				F4BB486C2D623732004225AC /* HomeVCLabel.swift */,
 				F4BB486E2D6239FE004225AC /* HomeHorizontalColCell.swift */,
 				F4BB48702D6240C1004225AC /* HomeVerticalColCel.swift */,
+				4A8266592D651CAC002E4280 /* HomeTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +335,7 @@
 				4AA71CD92D5CAE5700CF9203 /* Nunito-MediumItalic.ttf in Resources */,
 				4AA71CD02D5CAE4100CF9203 /* Nunito-SemiBold.ttf in Resources */,
 				4AA71CCD2D5CAE3A00CF9203 /* Nunito-ExtraLightItalic.ttf in Resources */,
+				4A8266582D649B3F002E4280 /* profPic.jpg in Resources */,
 				4A233BEF2D5BE3F700635373 /* Assets.xcassets in Resources */,
 				4AA71CD12D5CAE4400CF9203 /* Nunito-Bold.ttf in Resources */,
 				4AA71CD52D5CAE4E00CF9203 /* Nunito-SemiBoldItalic.ttf in Resources */,
@@ -366,6 +371,7 @@
 				F4BB48692D622A01004225AC /* HomeVCButton.swift in Sources */,
 				4AA71CAF2D5C7EFB00CF9203 /* AuthHeaderView.swift in Sources */,
 				4AA71CB22D5C802500CF9203 /* LoginControllerVC.swift in Sources */,
+				4A82665A2D651CAC002E4280 /* HomeTableViewCell.swift in Sources */,
 				4A233BFF2D5C78B600635373 /* WelcomeScreenVC1.swift in Sources */,
 				4A233C062D5C794600635373 /* OnboardingView.swift in Sources */,
 				4A8266482D607EF2002E4280 /* HomeTabBarController.swift in Sources */,

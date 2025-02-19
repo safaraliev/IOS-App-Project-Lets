@@ -6,7 +6,8 @@ class HomeHorizontalColCell: UICollectionViewCell {
     let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleToFill
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         return imageView
     }()
 
@@ -14,11 +15,14 @@ class HomeHorizontalColCell: UICollectionViewCell {
         super.init(frame: frame)
         
         contentView.addSubview(imageView)
-        contentView.backgroundColor = .green
+        imageView.layer.cornerRadius = bounds.width / 2
+        contentView.backgroundColor = .white
+        contentView.layer.cornerRadius = bounds.width / 2
         NSLayoutConstraint.activate([
-            imageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            imageView.heightAnchor.constraint(equalToConstant: 60),
-            imageView.widthAnchor.constraint(equalToConstant: 60)
+            imageView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            imageView.widthAnchor.constraint(equalTo: self.widthAnchor, constant: -1),
+            imageView.heightAnchor.constraint(equalTo: self.heightAnchor, constant: -1),
         ])
     }
 
